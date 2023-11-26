@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --darkergrey: #232323;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    height: 75vh;
+    position: relative;
+}
+
+.main .box {
+    height: 75vh;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    max-width: 60vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    top: 10px;
+    width: 144px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100% - 62px);
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.hero> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.seperation {
+    height: 7px;
+    background-color: var(--darkergrey);
+}
+
+.btn {
+    border: none;
+    padding: 3px 8px;
+    font-weight: 600;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.eng-btn {
+    color: white;
+    border: 1px solid #615f5f;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.btn-red-sm {
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 8px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.main input {
+    background-color: rgba(23, 23, 23, 0.7);
+    padding: 11px 125px 8px 14px;
+    border: 2px solid rgba(61, 61, 61, 0.5);
+    border-radius: 3px;
+    color: white;
+}
+
+.main input ::placeholder{
+    font-size: 13px;
+    color: #131211;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.red-hover {
+    transition-duration: 250ms;
+    transition-property: background-color, border-color;
+    transition-timing-function: ease-in-out;
+}
+
+.red-hover:hover {
+    background-color: #c91916;
+    color: rgb(216, 216, 216);
+}
