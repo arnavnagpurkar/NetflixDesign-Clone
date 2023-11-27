@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -69,7 +69,6 @@ nav button {
 }
 
 .hero> :nth-child(1) {
-    font-family: 'Poppins', sans-serif;
     font-weight: 900;
     font-size: 48px;
 }
@@ -84,7 +83,7 @@ nav button {
     font-size: 20px;
 }
 
-.seperation {
+.seperator {
     height: 7px;
     background-color: var(--darkergrey);
 }
@@ -128,7 +127,7 @@ nav button {
     color: white;
 }
 
-.main input ::placeholder{
+.main input ::placeholder {
     font-size: 13px;
     color: #131211;
 }
@@ -141,12 +140,114 @@ nav button {
 }
 
 .red-hover {
-    transition-duration: 250ms;
-    transition-property: background-color, border-color;
-    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
 }
 
 .red-hover:hover {
     background-color: #c91916;
     color: rgb(216, 216, 216);
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 60vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+}
+
+section.first>div {
+    margin: 5vw 0;
+    display: flex;
+    flex-direction: column;
+}
+
+section.first>div :nth-child(1) {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400px;
+}
+
+section.third>.secImg video {
+    right: 6vw;
+    width: 19vw;
+}
+
+.faq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-top: 75px;
+    color: white;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.faqbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55vw;
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: 15px;
+    font-weight: 400;
+    padding: 25px 20px;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    transition-duration: 250ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+}
+
+.faqbox:hover {
+    background-color: #414141;
+}
+
+.text {
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.faq .hero-buttons :nth-child(1) {
+    background-color: rgba(23, 23, 23, 0.7);
+    padding: 11px 125px 8px 14px;
+    border: 2px solid rgba(61, 61, 61, 0.5);
+    border-radius: 3px;
+    color: white;
+}
+
+.faq .hero-buttons {
+    margin-bottom: 55px;
 }
