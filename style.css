@@ -8,6 +8,7 @@
 
 :root {
     --darkergrey: #232323;
+    --footertext: rgba(255, 255, 255, 0.7);
 }
 
 body {
@@ -172,6 +173,7 @@ nav button {
     position: absolute;
     top: 51px;
     right: 0;
+    width: 80%;
 }
 
 section.first>div {
@@ -250,4 +252,62 @@ section.third>.secImg video {
 
 .faq .hero-buttons {
     margin-bottom: 55px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 60vw;
+    margin: auto;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item a {
+    padding: 7px 0;
+    color: var(--footertext);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-text {
+    display: flex;
+    max-width: 60vw;
+    margin: auto;
+    padding: 25px;
+    padding-top: 55px;
+    padding-bottom: 15px;
+    color: var(--footertext);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer-text a {
+    color: var(--footertext);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footerbtn {
+    max-width: 60vw;
+    margin: auto;
+    padding: 20px 0;
+    font-weight: 400;
+}
+
+.footerbtn button {
+    font-size: 16px;
+    padding: 5px 20px;
+}
+
+.netflix-text {
+    color: var(--footertext);
+    max-width: 60vw;
+    margin: auto;
+    font-weight: 400;
+    font-size: 14px;
+    padding-bottom: 80px;
 }
