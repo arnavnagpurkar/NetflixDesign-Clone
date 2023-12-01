@@ -388,6 +388,9 @@ section.third>.secImg video {
     .btn-red {
         font-size: 18px;
     }
+    nav{
+        max-width: 90vw;
+    }
 }
 
 @media screen and (max-width: 609px) {
