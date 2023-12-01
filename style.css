@@ -385,17 +385,37 @@ section.third>.secImg video {
         right: 5%;
         width: 81%;
     }
+
     .btn-red {
         font-size: 18px;
     }
-    nav{
+
+    nav {
         max-width: 90vw;
     }
 }
 
 @media screen and (max-width: 609px) {
-    .hero-buttons{
+    .hero-buttons {
         display: flex;
         flex-direction: column;
+    }
+
+    .secImg img {
+        width: 455px;
+    }
+
+    section.third>.secImg video {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 409px) {
+    .secImg img {
+        width: 455px;
+    }
+
+    section.third>.secImg video {
+        width: 250px;
     }
 }
