@@ -16,7 +16,7 @@ body {
 }
 
 .main {
-    background-image: url("assets/images/bg.jpg");
+    background-image: url("../assets/images/bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -215,7 +215,7 @@ section.third>.secImg video {
     font-size: 48px;
 }
 
-.faqbox {
+.faqbox div{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -223,6 +223,7 @@ section.third>.secImg video {
     cursor: pointer;
     font-size: 24px;
     margin-top: 15px;
+    margin-bottom: 1px;
     font-weight: 400;
     padding: 25px 20px;
     background-color: rgb(45, 45, 45);
@@ -232,8 +233,30 @@ section.third>.secImg video {
     transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
 }
 
-.faqbox:hover {
+.faqbox div:hover{
     background-color: #414141;
+}
+
+.faqbox > span {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    background-color: rgb(45, 45, 45);
+    transition: height 0.3s ease;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.faqbox > span.hidden {
+    height: 0;
+    width: 0; /* Set width to 0 when hidden */
+}
+
+.faqbox > span:not(.hidden) {
+    height: 150px;
+    width: 55vw;
+    padding: 25px 20px;
 }
 
 .text {
@@ -336,6 +359,11 @@ section.third>.secImg video {
     .footer-text {
         max-width: 80vw;
         margin: auto;
+    }
+
+    .faqbox > span:not(.hidden) {
+        height: 270px;
+        font-size: 18px;
     }
 }
 
