@@ -250,11 +250,11 @@ section.third>.secImg video {
 
 .faqbox > span.hidden {
     height: 0;
-    width: 0; /* Set width to 0 when hidden */
+    width: 0;
 }
 
 .faqbox > span:not(.hidden) {
-    height: 150px;
+    height: auto;
     width: 55vw;
     padding: 25px 20px;
 }
@@ -362,7 +362,7 @@ section.third>.secImg video {
     }
 
     .faqbox > span:not(.hidden) {
-        height: 270px;
+        height: auto;
         font-size: 18px;
     }
 }
